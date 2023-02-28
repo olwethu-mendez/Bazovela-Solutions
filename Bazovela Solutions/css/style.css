@@ -16,11 +16,12 @@ body {
     box-shadow: 0px 5px 10px 0px #333;*/
     padding: 10px 10px 10px 10px;
     width: 90vw;
+    margin: 0;
+    padding: 0;
 }
 
 header{
     display: flex;
-    width: 100vw;
     align-items: center;
     position: static;
     background-color: #99999900;
@@ -36,6 +37,10 @@ header{
     border: none;
     background: none;
     font-size: 55px;
+}
+
+.menu-button button:hover {
+    color:#ff7d00;
 }
 
 .mobile-navigation {
@@ -84,6 +89,7 @@ article img {
 footer {
     display: flex;
     color: #686868;
+    margin-top: 15vh;
 }
 
 footer button, footer button a {
@@ -141,6 +147,10 @@ footer button .fa-whatsapp:hover {
     border: none;
     background: none;
     font-size: 55px;
+}
+
+.close-button button:hover {
+    color: red;
 }
 
 @media only screen and (max-width: 980px){

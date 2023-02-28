@@ -1,0 +1,174 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+p{
+    font-size: 14px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    /*margin: 5% 15% 5% 15%;
+    box-shadow: 0px 5px 10px 0px #333;*/
+    padding: 10px 10px 10px 10px;
+    width: 90vw;
+}
+
+header{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    position: static;
+    background-color: #99999900;
+	box-shadow: 0 4px 10px -10px;
+}
+
+.menu-button {
+    display: none;
+    flex-grow: auto;
+}
+
+.menu-button button {
+    border: none;
+    background: none;
+    font-size: 55px;
+}
+
+.mobile-navigation {
+    display: none;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+#logo {
+    margin-right: 25vw;
+    flex-grow: 1;
+}
+
+nav a {
+    text-decoration: none;
+    margin-right: 45px;
+    color: #ff7d00;
+    font-size: 20px;
+}
+
+.active-navigation {
+    text-decoration: underline;
+    text-decoration-color: #ff7d00;
+}
+
+article {
+    margin: auto;
+    padding: 25px;
+    box-shadow: 0px 5px 10px 0px #333;
+    display: flex;
+    width: 85%;
+}
+
+article p{
+    flex: 1;
+    flex-direction: column;
+    padding-right: 20px;
+}
+
+article img {
+    flex: 1;
+}
+
+footer {
+    display: flex;
+    color: #686868;
+}
+
+footer button, footer button a {
+    background: none;
+    border: none;
+    margin-left: 5px;
+    color: #686868;
+}
+
+footer button .fa-instagram:hover {
+    /*border-radius: 0.2em;*/
+    background: linear-gradient(to right, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+}
+
+footer button .fa-facebook-square:hover {
+    color: #4267b2;
+}
+
+footer button .fa-whatsapp:hover {
+    background: #25D366;
+}
+
+.mobile-navigation {
+    position:fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ecececf0;
+    padding: 24px;
+
+    display: none;
+    transform: translateX(-107%);
+    transition: transform 300ms ease-in-out;
+}
+
+.mobile-navigation-open {
+    transform: translateX(-7%);
+}
+
+.mobile-navigation a {
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    color: #ff7d00;
+    border: 1px solid #333;
+    border-radius: 0 5px 0 5px;
+    padding: 5px 115px 5px 15px;
+    background: #333;
+}
+
+.close-button {
+    align-self: end;
+}
+
+.close-button button {
+    border: none;
+    background: none;
+    font-size: 55px;
+}
+
+@media only screen and (max-width: 980px){
+    main {
+        display: block;
+    }
+
+    header #logo {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .mobile-navigation {
+        display: flex;
+        font-size: 25px;
+        width: 75vw;
+        flex-direction: column;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .mobile-navigation-header{
+        display: block;
+        position: inherit;
+    }
+}

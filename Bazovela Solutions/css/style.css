@@ -138,6 +138,10 @@ footer button .fa-whatsapp:hover {
     background: #333;
 }
 
+#mobile-nav-active {
+    border-bottom: 5px solid #ff7d00;
+}
+
 .close-button {
     align-self: end;
 }
